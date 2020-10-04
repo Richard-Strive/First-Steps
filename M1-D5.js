@@ -137,13 +137,50 @@ const WhoIsBigger= function( x, y ){
     Ex. SplitMe("I love coding") => returns [ "I","Love","Coding"]
 */
 
+const SplitMe= function(yes){
 
+  return yes.split("")
+
+}
+
+
+console.log(SplitMe("I am proud of Strive"))
 
 
 
 /* Ex.4
     Write the function DeleteOne that receives a string and a boolean. If the boolean is true, should return the string without the first letter, otherwise should remove the last one
 */
+let string= "Richard";  
+
+let Boolean= true || false
+
+const DeleteOne= function(string, Boolean)
+ 
+ {
+
+   if(Boolean===true) {
+
+ return string.substring(1)       // vere
+
+}
+
+else
+
+{
+
+return string.slice(0, -1)         // false
+
+}
+
+return
+}
+
+console.log(DeleteOne(string, boolean))
+
+
+
+
 
 /* Ex.5
    Write the function OnlyLetters that receives a string, removes all the numbers and returns it.
