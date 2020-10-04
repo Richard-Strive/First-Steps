@@ -78,7 +78,7 @@ email2: "steavejobs4@gmail.com",
 }
 
 
-apple= student.email===student2.email2 ? true : false
+/*apple= student.email===student2.email2 ? true : false
 
 
 console.log(apple)
@@ -89,7 +89,7 @@ In your eCommerce you have a promotion: if the customer shopping cart is more th
 Write an algorithm that calculate totalCost based on this assumption.
 */
 
-let totalShippingCart= 60
+/*let totalShippingCart= 60
 
 stupidDog= totalShippingCart>50 ? "Free from shipment fee" : " + 10 final cost"
 
@@ -101,7 +101,7 @@ You are working for the same eCommerce. Today is the black friday and everything
 Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalShopping.
 */
 
-console.log(totalShoppingCart - (totalShoppingCart * 20 / 100))
+/*console.log(totalShoppingCart - (totalShoppingCart * 20 / 100))
 
 /* EXERCISE 8
 Create an object rapresenting a car with properties like brand, model, licensePlate.
@@ -109,7 +109,7 @@ After you create the first car, clone it and change the licensePlate without aff
 Do it for five cars.
 */
 
-car2.licensePlate="CupCake";
+/*car2.licensePlate="CupCake";
 
 car3.licensePlate="MilkShake";
 
@@ -121,13 +121,13 @@ car5.licensePlate="Banana"
 Create a new array called carsForRent containing all the cars from the previous exercise
 */
 
-const carsForRent=[car,car2,car3,car4,car5]
+/*const carsForRent=[car,car2,car3,car4,car5]
 
 /* EXERCISE 10
 Remove the first and the last car from the carsForRent array.
 */
 
-carsForRent.pop()
+/*carsForRent.pop()
 carsForRent.shift()
 console.log(carsForRent)
 
@@ -135,7 +135,7 @@ console.log(carsForRent)
 Print in the console, the types of a single car, of the car licensePlate and of the brand
 */
 
-let mike= [car.name, car2.name,car3.name, car4.name, car5.name]
+/*let mike= [car.name, car2.name,car3.name, car4.name, car5.name]
 
 let hugo= [car.model, car2.model, car4.model, car5.model]
 
@@ -148,7 +148,7 @@ Create a new array called carsForSale and insert 3 cars in it.
 Store in the variable totalCars the number of cars in both carsForSale and carsForRent arrays
 */
 
-const carForSale2 = [car, car2, car3];
+/*const carForSale2 = [car, car2, car3];
 
 const carForRent2 = [car, car2, car3, car4, car5];
 
@@ -161,6 +161,11 @@ console.log(totalCars2)
 /* EXERCISE 13
 Print in the console the data from each car in the carsForSale array
 */
+
+for(i= 0; i< carForSale2; i++){
+
+    console.log(carForSale2[i])
+}
 
 /* WRITE YOUR CODE HERE */
 
