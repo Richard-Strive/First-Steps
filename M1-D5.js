@@ -176,9 +176,9 @@ return string.slice(0, -1)         // false
 return
 }
 
+
+
 console.log(DeleteOne(string, boolean))
-
-
 
 
 
@@ -187,9 +187,29 @@ console.log(DeleteOne(string, boolean))
    Ex.: OnlyLetters("I love 123 whatever")  => returns "I love whatever"
 */
 
+let tomorrow= "My phone number is: 3496916549. Call me back"
+
+
+const OnlyLetters= function(string){
+
+    return string.replace(/(\d+)/g, "")
+
+
+     return
+}
+
+console.log(OnlyLetters(tomorrow))
+
+
+
+
+
 /* Ex.6 
    Write the function IsThisAnEmail that receives a string and returns true if the string is a valid email.
 */
+
+  
+
 
 /* Ex.7
    Write the function WhatDayIsIt that should return the day of the week
