@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Task List</title>
+
+
+    <style>
+
+body{
+ 
+ background-color: darkkhaki;
+}
+
+.taskListBackground{
+
+background-color: darkturquoise;
+
+}
+
+.button{
+
+ border-radius: 30px;
+font-size: large;
+font-weight: bold;
+
+}
+
+#myTaskList{
+
+font-weight: bolder;
+font-size: x-large;
+
+}
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+ <div class="taskListBackground">
+<span>
+    You can add any task you like by writing it in the specified field and
+    then press "Add new task" </span> 
+ <br/><br/>
+    
+<div class="header">
+
+<h1>Welcome to your personal Task List!</h1>
+
+<input type="text"  id="newTask" placeholder="Hey write here"/> 
+<input class="button" type="button" value="Add new task" onclick="addNewTask()"/>
+
+</div>   
+
+<ul id="myTaskList">
+    
+  </ul>
+
+  <hr/>
+
+  <input class="button" type="button" value="Remove Last Task" onclick="removeLast()"/>
+
+  <input class="button" type="button" value="Remove First Task" onclick="removeFirst()" />
+
+  <input class="button" type="button" value="Change task background" onclick="changeTaskBackgroundColor()"/>
+
+     <hr />
+
+     <input class="button" type="button" value="Sort" onclick="bubblesort()" />
+
+     
+
+</div>
+<script>
+
+
+
+
+function addNewTask(){
+  let myTaskList= document.querySelector("#myTaskList") // vado a creare un riferimento alla mia <ul>
+  let l1 = document.createElement("li") // qua creo un nuovo <li> da zero senza né testo né posizione
+  let inputText = document.querySelector('#newTask') // seleziono il campo di testo dove scrivo il nome del task (<input />)
+  let text= inputText.value // vado a salvare nella variabile text l'attuale contenuto del campo testuale trovato sopra
+  l1.innerText = text // assegno come proprietà testuale del mio <li> appena creato il contenuto della casella di testo
+  myTaskList.appendChild(l1) // inserisco il <li> come figlio di <ul> tramite il metodo appendChild
+}
+
+
+
+function removeFirst(){
+
+    let myTaskList= document.querySelector("#myTaskList")
+    let l1 = document.querySelector("li")
+
+    myTaskList.removeChild(l1)
+
+
+}
+
+function removeLast(){
+
+    let myTaskList= document.querySelector("#myTaskList")
+
+
+
+
+}
+
+
+</script>
+</body>
+</html>
