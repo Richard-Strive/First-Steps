@@ -126,31 +126,71 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
-/* WRITE YOUR CODE HERE */
+const check3and7= function(N){
+  if(N%3===0 || N%7===0){
+    return "Hello"
+}
+else
+{
+     return "Hellya"
+}
+    return
+}
+
+console.log(check3and7(4))
 
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+const  reverseString= function(string){
+
+  return string.split("").reverse().join("")
+
+}
+
+console.log(reverseString("Hello"))
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
 
-/* WRITE YOUR CODE HERE */
+const upperFirst = function(string){
+
+    
+  return string.charAt(0).toUpperCase()+string.slice(1)
+
+
+}
+
+console.log(upperFirst("Hello"))
+
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+const cutString = function(string){
+
+
+  return string.substring(1,4)
+
+}
+
+console.log(cutString("Hello"))
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
 
-/* WRITE YOUR CODE HERE */
+const giveMeRandom= function(n){
+
+          
+       return [Math.floor(Math.random()*19)]
+
+}
+
+console.log(giveMeRandom())
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
